@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:id="@+id/cardView_character"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView_character_item"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/textView_character_item"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:padding="6dp"
+            android:fontFamily="@font/marvel_font_comic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
